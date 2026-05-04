@@ -1,0 +1,30 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  /* Prevent iOS rubber-band scroll on the root */
+  overscroll-behavior: none;
+}
+
+body {
+  height: 100%;
+  background: #f5f0e8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Safe area insets for notched phones */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+#root {
+  height: 100%;
+}
+
+/* Disable iOS tap highlight */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
